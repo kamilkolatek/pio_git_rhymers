@@ -39,7 +39,7 @@ public class IntLinkedList {
 
 
 	private Node last;
-	private int i;
+	private int i; //TODO pole do usunięcia, nie jest używane
 
 	/**
 	 * Dodaje element na koniec listy
