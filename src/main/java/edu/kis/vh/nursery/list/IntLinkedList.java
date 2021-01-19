@@ -41,6 +41,10 @@ public class IntLinkedList {
 	private Node last;
 	private int i;
 
+	/**
+	 * Dodaje element na koniec listy
+	 * @param i wartość elementu, który zostanie dodany na koniec listy
+	 */
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -51,20 +55,36 @@ public class IntLinkedList {
 		}
 	}
 
+	/**
+	 * Sprawdza czy lista jest pusta
+	 * @return true jeżeli lista jest pusta, w przeciwnym wypadku false
+	 */
 	public boolean isEmpty() {
 		return last == null;
 	}
 
+	/**
+	 * Sprawdza, czy lista jest pełna
+	 * @return true jeżeli lista jest pełna, w przeciwnym wypadku false
+	 */
 	public boolean isFull() {
 		return false;
 	}
 
+	/**
+	 * Zwraca wartość elementu znajdującego się na końcu listy
+	 * @return wartość ostatniego elementu na liście
+	 */
 	public int top() {
 		if (isEmpty())
 			return -1;
 		return last.getValue();
 	}
 
+	/**
+	 * Usuwa ostatni element z listy
+	 * @return wartość usuwanego elementu listy
+	 */
 	public int pop() {
 		if (isEmpty())
 			return -1;
